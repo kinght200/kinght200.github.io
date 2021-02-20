@@ -1,0 +1,5 @@
+HTTP协议:Hypertext Transfer Protocol 超文本传输协议
+协议的作用接收用来传输超文本 HTML(HyperTextMarkupLanguage)
+
+HTML:超文本标记语言
+HTTP:用来传输超文本的一个协议

@@ -13,6 +13,9 @@ urls = [
 
 
 async def diodownload(url):
+    # 发送请求
+    # 得到图片内容
+    # 保存到文件
     name = url.rsplit('/', 1)[1]  # 从末尾开始切，倒数第一个 / 为第1个，前面的为第0个，取第1个就取后面部分
     # with 自动关闭
     async with aiohttp.ClientSession() as session:  # requests

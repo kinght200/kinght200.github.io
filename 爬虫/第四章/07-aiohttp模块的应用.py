@@ -13,11 +13,11 @@ urls = [
 
 
 async def diodownload(url):
-    name = url.rsplit('/', 1)[1]  # 从末尾开始切，倒数第一个 / 为一个，前面的为一个，取第1个就取后面部分
+    name = url.rsplit('/', 1)[1]  # 从末尾开始切，倒数第一个 / 为第1个，前面的为第0个，取第1个就取后面部分
     # with 自动关闭
     async with aiohttp.ClientSession() as session:  # requests
         async with session.get(url) as resp:  # resp = requests.get()
-            # resp.content.read()
+            # resp.content.read() => resp.content
             # 请求回来了，写入文件
             with open(name, 'wb') as f:
                 # content 得到网页图片的二进制码，然后写入

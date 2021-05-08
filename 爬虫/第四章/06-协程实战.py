@@ -71,7 +71,7 @@ import asyncio
 #
 #     # 第二种写法（推荐）
 #     tasks = [
-#         asyncio.create_task(fun1()),
+#         asyncio.create_task(fun1()),  # py3.8以后加上asyncio.create_task（）
 #         asyncio.create_task(fun2()),
 #         asyncio.create_task(fun3()),
 #     ]

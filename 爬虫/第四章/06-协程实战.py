@@ -67,7 +67,7 @@ import asyncio
 # async def main():
 #     # 第一种写法
 #     # f1 = fun1()
-#     # await f1    # 一般awa挂起操作放在协程对象前面
+#     # await f1    # 一般await挂起操作放在协程对象前面
 #
 #     # 第二种写法（推荐）
 #     tasks = [

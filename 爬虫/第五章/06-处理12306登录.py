@@ -27,7 +27,7 @@ option = Options()
 # option.add_experimental_option('excludeSwitches',['enable_automation'])
 option.add_argument('--disable-blink-features=AutomationControlled')
 
-driver_url = r"E:/pycharm代码/爬虫/第五章/msedgedriver.exe"
+driver_url = r"E:\pycharm代码\爬虫\第五章\msedgedriver.exe"
 web = Edge(executable_path=driver_url, options=option)
 
 web.get('https://kyfw.12306.cn/otn/resources/login.html')

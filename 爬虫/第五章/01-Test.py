@@ -11,7 +11,7 @@
 from selenium.webdriver import Edge
 
 # 1.创建浏览器对象
-driver_url = r"E:/pycharm代码/爬虫/第五章/msedgedriver.exe"
+driver_url = r"E:\pycharm代码\爬虫\第五章\msedgedriver.exe"
 web = Edge(executable_path=driver_url)
 # 2.打开一个网址
 web.get("http://www.baidu.com")

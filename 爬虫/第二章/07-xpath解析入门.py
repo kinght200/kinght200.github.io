@@ -4,7 +4,7 @@
 # 安装lxml模块
 # pip install lxml
 # xpath解析
-from lxml.html import etree
+from xml import etree
 
 xml = """
 <book>
@@ -24,7 +24,7 @@ xml = """
             <nick>热热热热热2</nick>
         </span>
     </author>
-    
+
     <parther>
         <nick id="ppc">胖胖胖</nick>
         <nick id="ppbc">胖胖不胖</nick>

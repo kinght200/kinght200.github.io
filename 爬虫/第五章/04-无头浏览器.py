@@ -18,7 +18,7 @@ EDGE = {
         ]}
 }
 
-driver_url = r"E:/pycharm代码/爬虫/第五章/msedgedriver.exe"
+driver_url = r"E:\pycharm代码\爬虫\第五章\msedgedriver.exe"
 web = Edge(executable_path=driver_url, capabilities=EDGE)  # 把参数配置到浏览器中
 
 web.get("https://www.endata.com.cn/BoxOffice/BO/Year/index.html")

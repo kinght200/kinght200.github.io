@@ -15,7 +15,7 @@ proxy = {
         "https": "https://117.157.197.18:3128"
 }
 # proxies 代理
-resp = requests.get(url)
+resp = requests.get(url,proxies=proxy)
 resp.encoding = "UTF-8"
 print(resp.text)
 

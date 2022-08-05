@@ -1,7 +1,7 @@
 import requests
 from fake_useragent import UserAgent
 
-url = 'http://www.baidu.com/'
+url = 'https://www.baidu.com/'
 
 # 浏览器参数
 param = {
@@ -22,7 +22,7 @@ proxies = {
     "https": "https://206.253.164.122:80"
 }
 
-reqs = requests.get(url=url, headers=headers)
+reqs = requests.get(url=url, headers=headers,data=param)
 reqs.encoding = 'utf-8'
 # ques = reqs.text
 print(reqs.text)

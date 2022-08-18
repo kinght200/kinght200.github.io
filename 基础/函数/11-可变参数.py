@@ -1,4 +1,4 @@
-# *args 表示可变位置参数，结果是元组
+# *args 表示可变位置参数，结果是元组，关键字参数和位置参数都只能有一个
 # **kwargs 表示可变的关键字参数，结果是字典
 def add(a, b, *args, mul=1, **kwargs):
     print('a={},b={}'.format(a, b))

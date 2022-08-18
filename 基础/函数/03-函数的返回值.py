@@ -8,7 +8,7 @@ def add(a, b):
 result = add(1, 2)
 print(result ** 4)
 
-# 如果一个函数没有返回值，它的返回值技术None
+# 如果一个函数没有返回值，它的返回值就是None
 # print是一个内置函数
 x = print('hello')
 print(x)

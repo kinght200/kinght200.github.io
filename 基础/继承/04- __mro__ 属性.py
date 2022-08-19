@@ -22,6 +22,6 @@ class X(D, C):
 
 x = X()
 x.foo()
-print(X.__mro__)
+print(X.__mro__)  # 查看类的层次结构
 # (<class '__main__.X'>, <class '__main__.D'>, <class '__main__.B'>, <class '__main__.C'>, <class '__main__.A'>,
 # <class 'object'>)

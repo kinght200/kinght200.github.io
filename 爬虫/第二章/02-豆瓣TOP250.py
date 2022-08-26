@@ -3,7 +3,6 @@
 
 import csv
 import re
-
 import requests
 from fake_useragent import UserAgent
 

@@ -30,13 +30,13 @@ table = page.find('table', attrs={'class': 'hq_table'})  # 与上面代码一个
 trs = table.find_all('tr')[1:]
 for tr in trs:  # 每一行
     tds = tr.find_all('td')  # 拿到每行中的所有td
-    nems = tds[0].text  # .text 表示拿到被标签标记的内容
-    low = tds[1].text  # .text 表示拿到被标签标记的内容
-    avg = tds[2].text  # .text 表示拿到被标签标记的内容
-    high = tds[3].text  # .text 表示拿到被标签标记的内容
-    gui = tds[4].text  # .text 表示拿到被标签标记的内容
-    kind = tds[5].text  # .text 表示拿到被标签标记的内容
-    date = tds[6].text  # .text 表示拿到被标签标记的内容
-    csvwriter.writerow([nems, low, avg, high, gui, kind, date])
+    name = tds[0].text  # .text 表示拿到被标签标记的内容
+    low = tds[1].text
+    avg = tds[2].text
+    high = tds[3].text
+    gui = tds[4].text
+    kind = tds[5].text
+    date = tds[6].text
+    csvwriter.writerow([name, low, avg, high, gui, kind, date])
 f.close()
 print('over')

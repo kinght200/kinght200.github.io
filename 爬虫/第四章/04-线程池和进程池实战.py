@@ -1,10 +1,10 @@
 # 1。如何提取单个页面的数据
 # 2.上线程池，多个页面同时抓取
 import csv
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor,ProcessPoolExecutor
 
 import requests
-from lxml.html import etree
+from xml import etree
 
 f = open('data.csv', 'w', encoding='utf8')
 csvwriter = csv.writer(f)
@@ -33,6 +33,7 @@ def download_one_page(url):
 if __name__ == '__main__':
     # for i in range(1,14870):    # 效率及其低下
     #     download_one_page(f'http://www.xinfadi.com.cn/marketanalysis/0/list/{i}.shtml')
+
     # 创建线程池
     with ThreadPoolExecutor(50) as t:
         for i in range(1, 200):

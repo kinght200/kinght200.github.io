@@ -1,7 +1,7 @@
 # 1.拿到页面源代码
 # 2.提取和解析数据
 import requests
-from lxml.html import etree
+from xml import etree
 
 url = 'https://guiyang.zbj.com/'
 resp = requests.get(url)

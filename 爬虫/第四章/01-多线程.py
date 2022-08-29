@@ -1,4 +1,4 @@
-# 线程于进程之间的关系
+# 线程与进程之间的关系
 # 进程是资源单位，每一个进程至少要有一个线程
 # 线程是执行单位
 
@@ -16,7 +16,7 @@ from threading import Thread  # 线程类
 #
 # if __name__ == '__main__':
 #     t = Thread(target=func)  # 创建线程，并给线程安排任务
-#     t.start()  # 多线程状态为可以开始工作状态，具体的执行时间有CPU决定
+#     t.start()  # 多线程状态为可以开始工作状态，具体的执行时间由CPU决定
 #
 #     for i in range(1000):
 #         print('main', i)

@@ -26,9 +26,6 @@ async def diodownload(url):
                 f.write(await resp.content.read())  # 读取内容是异步的，需要await挂起    resp.content.read() <==> resp.content
     print(name, '搞定')
     # s = aiohttp.ClientSession() 相当于 requests
-    # 发送请求
-    # 得到图片内容
-    # 保存到文件
 
 
 async def main():

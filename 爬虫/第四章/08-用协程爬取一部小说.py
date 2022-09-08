@@ -28,7 +28,7 @@ async def diodownload(cid, b_id, title):
         async with session.get(url) as resp:
             dic = await resp.json()
 
-            async with aiofiles.open(title, 'w', encoding='utf_8') as f:
+            async with aiofiles.open(title, 'w', encoding='utf-8') as f:
                 await f.write(dic['data']['novel']['content'])  # 把小说内容写出
 
 
@@ -42,6 +42,7 @@ async def getCatalog(url):
         # 准备异步任务
         a = asyncio.create_task(diodownload(cid, b_id, title))
         tasks.append(a)
+    # asyncio.run(asyncio.wait(tasks))  与下句代码一致
     await asyncio.wait(tasks)
 
 
